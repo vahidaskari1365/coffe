@@ -7,7 +7,7 @@ import { CATEGORIES, COMPANY, PRODUCTS, type Product } from "../data";
      files inside /public/downloads (committed to this repository).
 ------------------------------------------------------------------- */
 
-export const STATIC_DOWNLOAD_DIR = "/downloads";
+export const STATIC_DOWNLOAD_DIR = "downloads";
 
 /** Full catalog shipped with the repository. */
 export const STATIC_CATALOG_PDF = `${STATIC_DOWNLOAD_DIR}/ARKA-Product-Catalog.pdf`;
@@ -232,10 +232,12 @@ export function downloadBlob(filename: string, content: string, type = "text/htm
   setTimeout(() => URL.revokeObjectURL(url), 2500);
 }
 
-/** Downloads a file that is committed inside the repository. */
+/** Downloads a file that is committed inside the repository.
+ *  Paths are relative ("downloads/…") so they also resolve when the site is
+ *  hosted from a GitHub Pages sub-path (e.g. /coffe/). */
 export function downloadStatic(href: string, filename: string) {
   const a = document.createElement("a");
-  a.href = href;
+  a.href = href.replace(/^\//, "");
   a.download = filename;
   a.rel = "noopener";
   document.body.appendChild(a);
