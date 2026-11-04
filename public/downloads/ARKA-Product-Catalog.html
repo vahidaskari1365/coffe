@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>کاتالوگ محصولات — آرکا صنعت قهوه</title>
+<meta name="description" content="کاتالوگ فنی تجهیزات صنعتی قهوه آرکا: رستور، آسیاب، اسپرسو، استخراج و بسته‌بندی." />
+<link rel="stylesheet" href="../fonts/fonts.css" />
+<style>
+  :root{--ink:#171009;--coal:#211710;--copper:#a46933;--copper-light:#c2874c;--paper:#f8f3ea;--paper2:#f1e8da;--line:#ddcdb8;--muted:#7a6652}
+  *{box-sizing:border-box}
+  @page{size:A4;margin:9mm 8mm}
+  body{margin:0;background:#e9dfd0;color:var(--ink);font-family:"Vazirmatn",Tahoma,sans-serif;line-height:1.85;padding:26px;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .sheet{max-width:880px;margin:0 auto;background:var(--paper);padding:34px;border-top:6px solid var(--copper)}
+  .sheet > .card:last-of-type{margin-bottom:0}
+  header.top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;border-bottom:1px solid var(--line);padding-bottom:18px;margin-bottom:22px}
+  .brand{margin:0;font-size:25px;font-weight:800;line-height:1.3}
+  .brand span{display:block;font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.24em;color:var(--copper);font-weight:500;margin-top:5px}
+  .meta{margin:0;font-size:10.5px;color:var(--muted);text-align:left;line-height:2}
+  .meta a{color:var(--ink);text-decoration:none}
+  h1.page-title{font-size:18px;margin:0 0 18px;font-weight:800}
+  .eyebrow{font-family:"IBM Plex Mono",monospace;font-size:9px;letter-spacing:.2em;color:var(--copper);margin:0 0 8px;text-transform:uppercase}
+  /* cover */
+  .cover{margin-bottom:24px;border:1px solid #2b1d13;background:var(--coal);color:var(--paper);overflow:hidden;page-break-inside:avoid}
+  .cover-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:26px;padding:26px}
+  .cover h1{font-size:24px;line-height:1.6;margin:0 0 10px;font-weight:800}
+  .cover-desc{font-size:11px;color:rgba(248,243,234,.6);margin:0;line-height:2}
+  .cover-stats{display:flex;gap:22px;margin-top:20px;border-top:1px solid rgba(248,243,234,.15);padding-top:14px}
+  .cover-stats div{display:flex;flex-direction:column}
+  .cover-stats strong{font-family:"IBM Plex Mono",monospace;font-size:20px;color:var(--copper-light);font-weight:500;line-height:1.2}
+  .cover-stats span{font-size:9px;color:rgba(248,243,234,.5);margin-top:3px}
+  .cover-cats{display:flex;flex-direction:column;gap:6px}
+  .cover-cat{display:flex;align-items:center;gap:8px;border:1px solid rgba(248,243,234,.14);padding:8px 10px;background:rgba(248,243,234,.04)}
+  .cover-cat .num{font-family:"IBM Plex Mono",monospace;font-size:9px;color:var(--copper-light)}
+  .cover-cat strong{display:block;font-size:10.5px;font-weight:700}
+  .cover-cat em{display:block;font-style:normal;font-family:"IBM Plex Mono",monospace;font-size:7px;letter-spacing:.12em;color:rgba(248,243,234,.35);margin-top:1px}
+  .cover-img{width:100%;height:190px;object-fit:cover;object-position:center 45%;display:block;border-top:1px solid rgba(248,243,234,.14)}
+  /* product card */
+  .card{display:grid;grid-template-columns:190px 1fr;background:#fffdf8;border:1px solid var(--line);margin-bottom:14px;page-break-inside:avoid;overflow:hidden}
+  .card-media{position:relative;background:#e7dccb;min-height:100%}
+  .card-media img{width:100%;height:100%;object-fit:cover;display:block;min-height:190px}
+  .card-media .code{position:absolute;bottom:8px;right:8px;background:rgba(23,16,9,.72);color:#f8f3ea;font-family:"IBM Plex Mono",monospace;font-size:7px;letter-spacing:.1em;padding:3px 6px}
+  .card-body{padding:16px 18px;min-width:0}
+  .card-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;border-bottom:1px dashed var(--line);padding-bottom:9px;margin-bottom:10px}
+  .latin{font-family:"IBM Plex Mono",monospace;font-size:8px;letter-spacing:.14em;color:var(--copper);margin:0 0 3px}
+  .card h2{font-size:15.5px;margin:0 0 2px;font-weight:800;line-height:1.5}
+  .cat{font-size:9.5px;color:var(--muted);margin:0}
+  .cap{background:var(--ink);color:var(--paper);padding:6px 10px;text-align:center;min-width:105px;flex-shrink:0}
+  .cap span{display:block;font-size:8px;color:var(--copper-light)}
+  .cap strong{display:block;font-size:10px;font-weight:700;margin-top:2px}
+  .desc{font-size:10px;line-height:1.95;color:#4a382a;margin:0 0 11px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+  .cols{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+  h3{font-size:9px;margin:0 0 5px;color:var(--copper);font-weight:700}
+  table{width:100%;border-collapse:collapse;font-size:9px}
+  td{border-bottom:1px solid #efe5d7;padding:3.5px 0;vertical-align:top}
+  td:first-child{color:var(--muted);width:43%}
+  td:last-child{font-weight:600}
+  ul{margin:0 0 9px;padding-right:12px;font-size:9px;color:#4a382a}
+  li{margin-bottom:2px;line-height:1.8}
+  .card-foot{display:flex;justify-content:space-between;gap:8px;border-top:1px solid #efe5d7;margin-top:10px;padding-top:7px;font-family:"IBM Plex Mono",monospace;font-size:7px;color:#9a8878;letter-spacing:.02em}
+  footer.doc{border-top:1px solid var(--line);margin-top:22px;padding-top:12px;font-size:9px;color:var(--muted);display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;line-height:1.9}
+  footer.doc strong{color:var(--ink)}
+  .print-note{display:none}
+  @media print{
+    html,body{background:#fff;padding:0;margin:0}
+    .sheet{padding:0;border-top-width:0;max-width:none;background:#fff}
+    .sheet::before{content:"آرکا صنعت قهوه · ARKA COFFEE MACHINERY · PRODUCT CATALOG";display:block;font-family:"IBM Plex Mono",monospace;font-size:7px;letter-spacing:.18em;color:#a46933;border-bottom:2px solid #171009;padding-bottom:5px;margin-bottom:10px}
+    .card{break-inside:avoid;margin-bottom:9px}
+    .cover,footer.doc{break-inside:avoid}
+    a{color:inherit}
+  }
+  @media (max-width:640px){
+    body{padding:10px}
+    .sheet{padding:16px}
+    .card{grid-template-columns:1fr}
+    .card-media img{height:170px;min-height:0}
+    .cover-grid{grid-template-columns:1fr}
+    .cols{grid-template-columns:1fr}
+    .cover-img{height:110px}
+  }
+</style>
+</head>
+<body>
+  <div class="sheet">
+    <header class="top">
+      <div>
+        <p class="brand">آرکا صنعت قهوه<span>ARKA COFFEE MACHINERY</span></p>
+      </div>
+      <p class="meta">
+        تاریخ صدور: ۱۳ آبان ۱۴۰۵<br />
+        <a href="https://arkacoffee.ir">www.arkacoffee.ir</a><br />
+        <span dir="rtl">۰۲۱-۵۵۹۰۴۲۱۰</span>
+      </p>
+    </header>
+    <h1 class="page-title">کاتالوگ محصولات — آرکا صنعت قهوه</h1>
+    
+  <section class="cover">
+    <div class="cover-grid">
+      <div>
+        <p class="eyebrow">ARKA COFFEE MACHINERY · PRODUCT CATALOG</p>
+        <h1>تجهیزات صنعتی قهوه<br />از دانهٔ سبز تا بستهٔ نهایی</h1>
+        <p class="cover-desc">رستور، آسیاب، عصاره‌گیری و بسته‌بندی؛ چهار گروه تجهیزات با مشخصات فنی مستند و امکان سفارشی‌سازی برای ظرفیت تولید شما.</p>
+        <div class="cover-stats">
+          <div><strong>8</strong><span>مدل تجهیزات</span></div>
+          <div><strong>4</strong><span>گروه محصول</span></div>
+          <div><strong>۱۴</strong><span>ماه گارانتی</span></div>
+        </div>
+      </div>
+      <div class="cover-cats">
+        <div class="cover-cat"><span class="num">01</span><div><strong>رستری و پروفایل رست</strong><em>ROASTING</em></div></div><div class="cover-cat"><span class="num">02</span><div><strong>آسیاب و دوزینگ</strong><em>GRINDING &amp; DOSING</em></div></div><div class="cover-cat"><span class="num">03</span><div><strong>عصاره‌گیری و بار</strong><em>EXTRACTION &amp; BAR</em></div></div><div class="cover-cat"><span class="num">04</span><div><strong>بسته‌بندی و اتوماسیون</strong><em>PACKAGING</em></div></div>
+      </div>
+    </div>
+    <img class="cover-img" src="../images/roaster.jpg" alt="" />
+  </section>
+    
+      <section class="card">
+        <div class="card-media">
+          <img src="../images/roaster.jpg" alt="رستور صنعتی ۶۰ کیلوگرمی آر-۶۰" />
+          <span class="code">ARKA R-60</span>
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <div>
+              <p class="latin">ARKA R-60 / DRUM ROASTER</p>
+              <h2>رستور صنعتی ۶۰ کیلوگرمی آر-۶۰</h2>
+              <p class="cat">رستری و پروفایل رست · پرفروش‌ترین</p>
+            </div>
+            <div class="cap">
+              <span>ظرفیت</span>
+              <strong>۶۰ کیلوگرم / بچ</strong>
+            </div>
+          </div>
+          <p class="desc">آر-۶۰ برای رستوری‌های نیمه‌صنعتی و کارخانه‌های تولید قهوه طراحی شده است. مشعل ماژولار با کنترل الکترونیکی، درام فولاد ضدزنگ ۳۰۴ و سیستم ثبت دادهٔ دما، تکرارپذیری پروفایل رست را در تمام بچ‌ها تضمین می‌کند. خنک‌کنندهٔ همزن‌دار با جریان هوای فیلترشده، فرآیند رست را سریع‌تر در نقطهٔ هدف متوقف می‌کند.</p>
+          <div class="cols">
+            <div>
+              <h3>مشخصات فنی</h3>
+              <table>
+                <tr><td>ظرفیت هر بچ</td><td>۶۰ کیلوگرم دانهٔ سبز</td></tr><tr><td>زمان رست</td><td>۱۲ تا ۱۸ دقیقه</td></tr><tr><td>منبع حرارت</td><td>گاز شهری / الکتریک (اختیاری)</td></tr><tr><td>کنترل</td><td>PLC + HMI لمسی ۷ اینچ</td></tr><tr><td>محدودهٔ دما</td><td>۰ تا ۲۶۰ درجهٔ سانتی‌گراد</td></tr><tr><td>توان الکتریکی</td><td>۳٫۵ کیلووات</td></tr><tr><td>ولتاژ</td><td>۳۸۰ ولت سه‌فاز</td></tr><tr><td>ابعاد</td><td>۲۴۰ × ۱۶۰ × ۲۱۰ سانتی‌متر</td></tr><tr><td>وزن</td><td>۱۲۵۰ کیلوگرم</td></tr><tr><td>خروجی دود</td><td>سیکلون دو مرحله‌ای</td></tr>
+              </table>
+            </div>
+            <div>
+              <h3>قابلیت‌های کلیدی</h3>
+              <ul><li>درام فولاد ۳۰۴ با پره‌های اختصاصی برای یکنواختی حرارتی</li><li>مشعل ماژولار گاز/الکتریک با راندمان احتراق ۹۴ درصد</li><li>پنل لمسی ۷ اینچی با ذخیرهٔ ۵۰ پروفایل و ثبت داده</li><li>خنک‌کنندهٔ همزن‌دار ۱۲ دقیقه‌ای با فیلتر سیکلون</li></ul>
+              <h3>کاربردها</h3>
+              <ul><li>رستوری تجاری با تولید بالای یک تن در هفته</li><li>کارخانه‌های فرآوری و بسته‌بندی قهوه</li><li>کافه‌های زنجیره‌ای با رست اختصاصی</li></ul>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span>کد محصول: ARKA-01</span>
+            <span>توان الکتریکی: ۳٫۵ کیلووات</span>
+            <span>ARKA COFFEE MACHINERY</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card-media">
+          <img src="../images/roaster.jpg" alt="رستور نمونه‌برداری ۵ کیلوگرمی آر-۰۵" />
+          <span class="code">ARKA R-05</span>
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <div>
+              <p class="latin">ARKA R-05 / SAMPLE ROASTER</p>
+              <h2>رستور نمونه‌برداری ۵ کیلوگرمی آر-۰۵</h2>
+              <p class="cat">رستری و پروفایل رست · مناسب کافه</p>
+            </div>
+            <div class="cap">
+              <span>ظرفیت</span>
+              <strong>۵ کیلوگرم / بچ</strong>
+            </div>
+          </div>
+          <p class="desc">آر-۰۵ رستور آزمایشگاهی با کنترل دمای دقیق و اینرسی حرارتی پایین است؛ انتخابی مناسب برای کاپینگ، ارزیابی دانهٔ سبز و توسعهٔ پروفایل پیش از تولید انبوه. نرم‌افزار همراه، منحنی دما و نرخ افزایش حرارت را در هر ثانیه ثبت می‌کند.</p>
+          <div class="cols">
+            <div>
+              <h3>مشخصات فنی</h3>
+              <table>
+                <tr><td>ظرفیت هر بچ</td><td>۵ کیلوگرم دانهٔ سبز</td></tr><tr><td>زمان رست</td><td>۹ تا ۱۴ دقیقه</td></tr><tr><td>منبع حرارت</td><td>گاز یا الکتریک</td></tr><tr><td>کنترل</td><td>نیمه‌خودکار + ثبت داده</td></tr><tr><td>توان الکتریکی</td><td>۱٫۲ کیلووات</td></tr><tr><td>ولتاژ</td><td>۲۲۰ ولت تک‌فاز</td></tr><tr><td>وزن</td><td>۱۹۰ کیلوگرم</td></tr>
+              </table>
+            </div>
+            <div>
+              <h3>قابلیت‌های کلیدی</h3>
+              <ul><li>ثبت دادهٔ دما و منحنی RoR با دقت یک ثانیه</li><li>درام قابل تعویض برای رست‌های نوری و تیره</li><li>پنل کنترل دستی و نیمه‌خودکار</li><li>طراحی فشرده و قابل نصب در آزمایشگاه کیفیت</li></ul>
+              <h3>کاربردها</h3>
+              <ul><li>آزمایشگاه کیفیت رستوری</li><li>کاپینگ و ارزیابی دانهٔ سبز</li><li>کافه‌های تخصصی با رست درجا</li></ul>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span>کد محصول: ARKA-02</span>
+            <span>توان الکتریکی: ۱٫۲ کیلووات</span>
+            <span>ARKA COFFEE MACHINERY</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card-media">
+          <img src="../images/grinder.jpg" alt="آسیاب غلطکی صنعتی میل-۴۰۰" />
+          <span class="code">MILL-400</span>
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <div>
+              <p class="latin">MILL-400 / ROLLER GRINDER</p>
+              <h2>آسیاب غلطکی صنعتی میل-۴۰۰</h2>
+              <p class="cat">آسیاب و دوزینگ · اتوماسیون کامل</p>
+            </div>
+            <div class="cap">
+              <span>ظرفیت</span>
+              <strong>۴۰۰ کیلوگرم / ساعت</strong>
+            </div>
+          </div>
+          <p class="desc">میل-۴۰۰ با غلتک‌های فولادی سخت‌کاری‌شده و فاصلهٔ قابل تنظیم میکرومتری، برای تولید پودر اسپرسو، فیلتر و قهوهٔ ترک طراحی شده است. سیستم تغذیهٔ یکنواخت و سنسور دمای محصول، از افزایش دمای پودر و از دست رفتن ترکیبات معطر جلوگیری می‌کند.</p>
+          <div class="cols">
+            <div>
+              <h3>مشخصات فنی</h3>
+              <table>
+                <tr><td>ظرفیت</td><td>۴۰۰ کیلوگرم در ساعت</td></tr><tr><td>نوع غلتک</td><td>فولاد سخت‌کاری‌شده ۱۴۰ میلی‌متر</td></tr><tr><td>درجهٔ آسیاب</td><td>۴۰ حالت قابل تنظیم</td></tr><tr><td>قابلیت خنک‌کاری</td><td>دارد — غیرتماسی</td></tr><tr><td>توان الکتریکی</td><td>۷٫۵ کیلووات</td></tr><tr><td>ولتاژ</td><td>۳۸۰ ولت سه‌فاز</td></tr><tr><td>قیف ورودی</td><td>۴۰ کیلوگرم</td></tr><tr><td>وزن</td><td>۴۲۰ کیلوگرم</td></tr>
+              </table>
+            </div>
+            <div>
+              <h3>قابلیت‌های کلیدی</h3>
+              <ul><li>غلتک فولادی ۱۴۰ میلی‌متری با پوشش ضدسایش</li><li>تنظیم پله‌ای و پیوستهٔ درجهٔ آسیاب</li><li>سیستم خنک‌کاری یکپارچهٔ محفظهٔ آسیاب</li><li>قابلیت اتصال به خط دوزینگ و بسته‌بندی</li></ul>
+              <h3>کاربردها</h3>
+              <ul><li>خطوط تولید قهوهٔ پودری</li><li>کارخانه‌های بسته‌بندی صنعتی</li><li>تأمین قهوهٔ کافه‌های زنجیره‌ای</li></ul>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span>کد محصول: ARKA-03</span>
+            <span>توان الکتریکی: ۷٫۵ کیلووات</span>
+            <span>ARKA COFFEE MACHINERY</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card-media">
+          <img src="../images/grinder.jpg" alt="آسیاب نیمه‌صنعتی میل-۱۲۰" />
+          <span class="code">MILL-120</span>
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <div>
+              <p class="latin">MILL-120 / SHOP GRINDER</p>
+              <h2>آسیاب نیمه‌صنعتی میل-۱۲۰</h2>
+              <p class="cat">آسیاب و دوزینگ </p>
+            </div>
+            <div class="cap">
+              <span>ظرفیت</span>
+              <strong>۱۲۰ کیلوگرم / ساعت</strong>
+            </div>
+          </div>
+          <p class="desc">میل-۱۲۰ با برج‌های برشی سرامیکی، دقت دوز و پایداری حرارتی مناسبی برای کافه‌های تخصصی فراهم می‌کند. صفحهٔ نمایشگر دوز برنامه‌پذیر و قابلیت قفل کردن تنظیمات، خطای اپراتور را به حداقل می‌رساند.</p>
+          <div class="cols">
+            <div>
+              <h3>مشخصات فنی</h3>
+              <table>
+                <tr><td>ظرفیت</td><td>۱۲۰ کیلوگرم در ساعت</td></tr><tr><td>نوع برج</td><td>سرامیکی ۸۳ میلی‌متر</td></tr><tr><td>دوز</td><td>۰٫۱ تا ۲۵ ثانیه، سه‌حالته</td></tr><tr><td>قیف</td><td>۱٫۵ کیلوگرم</td></tr><tr><td>توان الکتریکی</td><td>۰٫۹ کیلووات</td></tr><tr><td>ولتاژ</td><td>۲۲۰ ولت</td></tr><tr><td>وزن</td><td>۳۵ کیلوگرم</td></tr>
+              </table>
+            </div>
+            <div>
+              <h3>قابلیت‌های کلیدی</h3>
+              <ul><li>برج برشی سرامیکی ۸۳ میلی‌متری</li><li>دوز برنامه‌پذیر در سه حالت تک‌شات، دابل و پیوسته</li><li>بدنهٔ آلومینیوم رنگ‌پودری با پایهٔ ضدلرزش</li><li>تعویض آسان برج بدون نیاز به ابزار تخصصی</li></ul>
+              <h3>کاربردها</h3>
+              <ul><li>کافه‌های تخصصی</li><li>رستوری با فروش پودر</li><li>آشپزخانه‌های صنعتی</li></ul>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span>کد محصول: ARKA-04</span>
+            <span>توان الکتریکی: ۰٫۹ کیلووات</span>
+            <span>ARKA COFFEE MACHINERY</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card-media">
+          <img src="../images/espresso.jpg" alt="دستگاه اسپرسو سه‌گروه بار-۳" />
+          <span class="code">BAR-3</span>
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <div>
+              <p class="latin">BAR-3 / COMMERCIAL ESPRESSO</p>
+              <h2>دستگاه اسپرسو سه‌گروه بار-۳</h2>
+              <p class="cat">عصاره‌گیری و بار · محبوب کافه‌ها</p>
+            </div>
+            <div class="cap">
+              <span>ظرفیت</span>
+              <strong>۳۰۰ فنجان / ساعت</strong>
+            </div>
+          </div>
+          <p class="desc">بار-۳ با سیستم دماکنترل چندنقطه‌ای و دیگ بخار ۱۱ لیتری، جریان عصاره‌گیری ثابت را حتی در پیک سفارش‌ها حفظ می‌کند. گروه‌های اشباع‌شده از جنس برنج کروم‌اندود و نازل بخار گردان، کنترل کامل باریستا روی استخراج و بافت شیر را ممکن می‌سازد.</p>
+          <div class="cols">
+            <div>
+              <h3>مشخصات فنی</h3>
+              <table>
+                <tr><td>تعداد گروه</td><td>۳ گروه اشباع‌شده</td></tr><tr><td>حجم دیگ بخار</td><td>۱۱ لیتر</td></tr><tr><td>ظرفیت</td><td>تا ۳۰۰ فنجان در ساعت</td></tr><tr><td>دماکنترل</td><td>مستقل برای هر گروه (PID)</td></tr><tr><td>توان الکتریکی</td><td>۵٫۵ کیلووات</td></tr><tr><td>ولتاژ</td><td>۳۸۰ ولت سه‌فاز</td></tr><tr><td>ابعاد</td><td>۱۰۵ × ۵۰ × ۵۵ سانتی‌متر</td></tr><tr><td>وزن</td><td>۷۸ کیلوگرم</td></tr>
+              </table>
+            </div>
+            <div>
+              <h3>قابلیت‌های کلیدی</h3>
+              <ul><li>دیگ بخار ۱۱ لیتری با دماکنترل مستقل هر گروه</li><li>پیش‌گرم‌کن فنجان و سیستم پیش‌شستشوی گروه</li><li>نمایشگر فشار دوگانه و برنامهٔ شستشوی خودکار</li><li>پوشش وود و استنلس با امکان سفارشی‌سازی</li></ul>
+              <h3>کاربردها</h3>
+              <ul><li>کافه‌های پرمصرف و زنجیره‌ای</li><li>رستوران و هتل</li><li>بار قهوهٔ تخصصی</li></ul>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span>کد محصول: ARKA-05</span>
+            <span>توان الکتریکی: ۵٫۵ کیلووات</span>
+            <span>ARKA COFFEE MACHINERY</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card-media">
+          <img src="../images/hero-roastery.jpg" alt="سیستم استخراج سرد کلد-۲۰۰" />
+          <span class="code">COLD-200</span>
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <div>
+              <p class="latin">COLD-200 / EXTRACTION TANK</p>
+              <h2>سیستم استخراج سرد کلد-۲۰۰</h2>
+              <p class="cat">عصاره‌گیری و بار </p>
+            </div>
+            <div class="cap">
+              <span>ظرفیت</span>
+              <strong>۲۰۰ لیتر / دوره</strong>
+            </div>
+          </div>
+          <p class="desc">کلد-۲۰۰ یک مخزن استخراج دو‌جداره با کنترل دما، برنامهٔ همزدن و خروجی فیلتراسیون یکپارچه است. برای تولید کنسانترهٔ سرد در مقیاس کارگاه، تأمین کافه‌های زنجیره‌ای و تولید نوشیدنی آمادهٔ مصرف طراحی شده است.</p>
+          <div class="cols">
+            <div>
+              <h3>مشخصات فنی</h3>
+              <table>
+                <tr><td>حجم هر دوره</td><td>۲۰۰ لیتر</td></tr><tr><td>جنس مخزن</td><td>استیل ۳۱۶L</td></tr><tr><td>محدودهٔ دما</td><td>۲ تا ۱۲ درجهٔ سانتی‌گراد</td></tr><tr><td>زمان استخراج</td><td>۸ تا ۲۰ ساعت</td></tr><tr><td>فیلتراسیون</td><td>دو مرحله‌ای استیل</td></tr><tr><td>توان الکتریکی</td><td>۲٫۲ کیلووات</td></tr><tr><td>ولتاژ</td><td>۳۸۰ ولت سه‌فاز</td></tr>
+              </table>
+            </div>
+            <div>
+              <h3>قابلیت‌های کلیدی</h3>
+              <ul><li>مخزن ۳۱۶L با جدارهٔ خنک‌کننده</li><li>برنامهٔ همزن متناوب برای استخراج یکنواخت</li><li>فیلتراسیون دو مرحله‌ای در خروجی</li><li>پنل دما و زمان با ثبت دوره‌های استخراج</li></ul>
+              <h3>کاربردها</h3>
+              <ul><li>تولید نوشیدنی آمادهٔ مصرف</li><li>کافه‌های زنجیره‌ای</li><li>تولید کنسانترهٔ صادراتی</li></ul>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span>کد محصول: ARKA-06</span>
+            <span>توان الکتریکی: ۲٫۲ کیلووات</span>
+            <span>ARKA COFFEE MACHINERY</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card-media">
+          <img src="../images/packaging.jpg" alt="خط بسته‌بندی وکیوم پک-۴۰" />
+          <span class="code">PACK-40</span>
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <div>
+              <p class="latin">PACK-40 / VACUUM LINE</p>
+              <h2>خط بسته‌بندی وکیوم پک-۴۰</h2>
+              <p class="cat">بسته‌بندی و اتوماسیون · صادراتی</p>
+            </div>
+            <div class="cap">
+              <span>ظرفیت</span>
+              <strong>۴۰ بسته / دقیقه</strong>
+            </div>
+          </div>
+          <p class="desc">پک-۴۰ ترکیبی از توزین دقیق، تزریق نیتروژن و وکیوم دو‌طرفه است تا اکسیژن باقی‌مانده در بسته به حداقل برسد. سیستم کنترل مرکزی، داده‌های هر بچ را ثبت و امکان ردیابی محصول را فراهم می‌کند. مناسب بسته‌های ۲۵۰ گرمی تا ۱ کیلوگرمی.</p>
+          <div class="cols">
+            <div>
+              <h3>مشخصات فنی</h3>
+              <table>
+                <tr><td>ظرفیت</td><td>۴۰ بسته در دقیقه</td></tr><tr><td>وزن بسته</td><td>۲۵۰ تا ۱۰۰۰ گرم</td></tr><tr><td>دقت توزین</td><td>±۱ گرم</td></tr><tr><td>اتمسفر</td><td>نیتروژن + وکیوم دو‌طرفه</td></tr><tr><td>توان الکتریکی</td><td>۶ کیلووات</td></tr><tr><td>ولتاژ</td><td>۳۸۰ ولت سه‌فاز</td></tr><tr><td>هوا‌ی مصرفی</td><td>۶ بار — ۴۰۰ لیتر بر دقیقه</td></tr>
+              </table>
+            </div>
+            <div>
+              <h3>قابلیت‌های کلیدی</h3>
+              <ul><li>توزین دقیق با خطای حداکثر ۱ گرم</li><li>تزریق نیتروژن و وکیوم دو‌طرفه</li><li>سنسور اکسیژن و نمایش آنلاین O₂</li><li>طراحی ماژولار و قابلیت افزودن تاریخ‌زن</li></ul>
+              <h3>کاربردها</h3>
+              <ul><li>کارخانه‌های بسته‌بندی قهوه</li><li>رستوری با فروش عمده</li><li>صادرات قهوهٔ تازه</li></ul>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span>کد محصول: ARKA-07</span>
+            <span>توان الکتریکی: ۶ کیلووات</span>
+            <span>ARKA COFFEE MACHINERY</span>
+          </div>
+        </div>
+      </section>
+      <section class="card">
+        <div class="card-media">
+          <img src="../images/packaging.jpg" alt="سیستم توزین و پرکن دوز-۲۴" />
+          <span class="code">DOSE-24</span>
+        </div>
+        <div class="card-body">
+          <div class="card-head">
+            <div>
+              <p class="latin">DOSE-24 / WEIGH &amp; FILL</p>
+              <h2>سیستم توزین و پرکن دوز-۲۴</h2>
+              <p class="cat">بسته‌بندی و اتوماسیون </p>
+            </div>
+            <div class="cap">
+              <span>ظرفیت</span>
+              <strong>۲۴ بسته / دقیقه</strong>
+            </div>
+          </div>
+          <p class="desc">دوز-۲۴ نسل فشردهٔ خطوط توزین صنعتی است؛ مناسب رستوری‌هایی که بسته‌بندی را به‌صورت نیمه‌خودکار انجام می‌دهند. قیف ضدالکتریسیته، لرزانندهٔ قابل تنظیم و صفحهٔ برنامه‌ریزی بچ، فرآیند را ساده و قابل تکرار می‌کند.</p>
+          <div class="cols">
+            <div>
+              <h3>مشخصات فنی</h3>
+              <table>
+                <tr><td>ظرفیت</td><td>۲۴ بسته در دقیقه</td></tr><tr><td>وزن بسته</td><td>۱۰۰ تا ۵۰۰ گرم</td></tr><tr><td>دقت توزین</td><td>±۲ گرم</td></tr><tr><td>جنس تماس</td><td>استیل ۳۱۶ گرید غذایی</td></tr><tr><td>توان الکتریکی</td><td>۱٫۵ کیلووات</td></tr><tr><td>ولتاژ</td><td>۲۲۰ ولت</td></tr><tr><td>وزن</td><td>۱۸۰ کیلوگرم</td></tr>
+              </table>
+            </div>
+            <div>
+              <h3>قابلیت‌های کلیدی</h3>
+              <ul><li>توزین تا ۵۰۰ گرم با دقت ±۲ گرم</li><li>قیف استیل ضدالکتریسیته</li><li>برنامه‌ریزی بچ و شمارش تولید روزانه</li><li>تمیزکاری سریع با قطعات جداشدنی</li></ul>
+              <h3>کاربردها</h3>
+              <ul><li>رستوری‌های متوسط</li><li>بسته‌بندی فروشگاهی</li><li>تولید نمونه و هدیهٔ سازمانی</li></ul>
+            </div>
+          </div>
+          <div class="card-foot">
+            <span>کد محصول: ARKA-08</span>
+            <span>توان الکتریکی: ۱٫۵ کیلووات</span>
+            <span>ARKA COFFEE MACHINERY</span>
+          </div>
+        </div>
+      </section>
+    <footer class="doc">
+      <span><strong>آرکا صنعت قهوه</strong> — تهران، بزرگ‌راه فتح، شهرک صنعتی چهاردانگه، خیابان صنعت ۷، پلاک ۲۴</span>
+      <span dir="rtl">hello@arkacoffee.ir · ۰۲۱-۵۵۹۰۴۲۱۰</span>
+    </footer>
+  </div>
+</body>
+</html>
